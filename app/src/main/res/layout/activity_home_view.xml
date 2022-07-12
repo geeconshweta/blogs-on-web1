@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeView">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/main_layout"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+
+                <ImageView
+                    android:id="@+id/Image_artcile"
+                    android:layout_width="match_parent"
+                    android:layout_height="251dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/article171" />
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_baseline_arrow_back" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="#F8E2DA">
+                <ImageView
+                    android:id="@+id/IV_iphone"
+                    android:layout_width="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_baseline_person_pin_24"
+                    android:layout_height="wrap_content">
+
+                </ImageView>
+
+
+                <TextView
+                    android:id="@+id/Tv_Author3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:layout_marginBottom="5sp"
+                    android:layout_toRightOf="@+id/IV_iphone"
+                    android:text="By:  :"
+                    android:textColor="#8D8D8D"
+                    android:textSize="10sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/Tv_Author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5sp"
+                    android:layout_marginTop="5sp"
+                    android:layout_marginEnd="5sp"
+                    android:layout_marginBottom="5sp"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@+id/Tv_Author3"
+                    android:text="Author"
+                    android:textColor="#8D8D8D"
+                    android:textSize="10sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/Tv_Author1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/IV_iphone"
+                android:text="7 Solid Reasons To Attend Our Speed Networking Events"
+                android:textColor="#464545"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="22sp">
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="#FF8455"
+                android:layout_marginRight="40dp"
+                android:layout_marginLeft="20dp">
+            </View>
+            <TextView
+                android:id="@+id/Tv_discription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#464545"
+                android:textSize="18sp"
+                android:layout_margin="10dp"
+                android:text="Meeting new contacts face to face can be \nthe best way to start any business relationship">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/meet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#707070"
+                android:textSize="12sp"
+                android:layout_margin="10dp"
+                android:text="Meeting new contacts face to face can be the best way to start \nany business relationship. At speed networking events, you get\n the chance to put yourself in front of a range of companies in one \nsetting in a short space of time, making this one of the most \nefficient networking activities to get involved in.">
+
+            </TextView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

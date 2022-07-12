@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="6dp"
+    android:elevation="4dp"
+  android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/Buss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/slectedcolor"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:padding="8dp"
+        android:paddingTop="5dp"
+        android:text="Bussiness"
+        android:textColor="#3F3F3F"></TextView>
+
+
+</androidx.cardview.widget.CardView>
