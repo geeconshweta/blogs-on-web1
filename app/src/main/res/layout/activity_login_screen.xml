@@ -36,7 +36,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/poppins"
+                android:fontFamily="@font/poppins_semibold"
                 android:gravity="center"
                 android:text="Welcome to Blogs on web !"
                 android:textColor="#241C1C"
@@ -62,50 +62,41 @@
                 android:layout_marginBottom="10dp"
                 android:orientation="vertical">
 
-                <com.google.android.material.textfield.TextInputLayout
+
+
+                <EditText
+                    android:id="@+id/lg_username"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittextcolor"
+                    android:hint="Username"
+                    android:textSize="15sp"
+                    android:paddingLeft="20dp"
                     android:textColor="@color/black"
-                    android:textColorHint="#B7B7B7">
+                    android:textColorHint="#B7B7B7" />
 
-                    <EditText
-                        android:id="@+id/lg_username"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:background="@drawable/editcolor"
-                        android:hint="UserName/Email"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black" />
-                </com.google.android.material.textfield.TextInputLayout>
 
-                <com.google.android.material.textfield.TextInputLayout
+
+
+                <EditText
+                    android:id="@+id/lg_pass"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="15dp"
+                    android:paddingLeft="20dp"
+                    android:textColor="@color/black"
+                    android:background="@drawable/edittextcolor"
+                    android:hint="Password"
                     android:textColorHint="#B7B7B7"
                     app:passwordToggleEnabled="true"
-                    app:passwordToggleTint="@color/orange">
-
-
-                    <EditText
-                        android:id="@+id/lg_pass"
-                        android:layout_width="match_parent"
-                        android:layout_height="50dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginBottom="10dp"
-                        android:background="@drawable/editcolor"
-                        android:hint="Password"
-                        android:textColorHint="@color/black"
-                        app:passwordToggleEnabled="true"
-                        app:passwordToggleTint="@color/orange" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    app:passwordToggleTint="@color/orange" />
 
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnlogin"
                     android:layout_width="match_parent"
-                    android:layout_height="55dp"
-                    android:layout_margin="5dp"
+                    android:layout_height="50dp"
                     android:layout_marginTop="20dp"
                     android:background="@drawable/loginbaground"
                     android:fontFamily="@font/poppins_medium"
@@ -146,6 +137,5 @@
 
 
     </ScrollView>
-
 
 </LinearLayout>
